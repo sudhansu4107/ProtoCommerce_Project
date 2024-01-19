@@ -1,9 +1,14 @@
+import sys
+
+import pytest
+
+sys.path.append("G:\\ProtoCommerce_Project")
 from Pom.Home_page import Home
 from Utilities.Base_class import Baseclass
 
 
 class Test_Home(Baseclass):
-
+    @pytest.mark.Smoke
     def test_register(self):
         home = Home(self.driver)
         home.fill_name()
@@ -17,4 +22,5 @@ class Test_Home(Baseclass):
         home.success_message()
         home.close_msg()
 
-
+    def test_file2(self):
+        print("This  is the second test.")
