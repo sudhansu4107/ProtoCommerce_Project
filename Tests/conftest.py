@@ -23,7 +23,7 @@ def setup(request):
         option.add_argument('--headless')
         option.add_argument('--disable-gpu')
         option.add_argument('--ignore--certificate-errors')
-        driver = webdriver.Chrome(service=ser_obj)
+        driver = webdriver.Chrome(service=ser_obj,options=option)
         print("Chrome  browser is triggered.")
     elif browser == "edge":
         ser_obj = Service("G:\\ProtoCommerce_Project\\Webdrivers\\msedgedriver.exe")
