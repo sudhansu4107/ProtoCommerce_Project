@@ -21,6 +21,6 @@ class Test_Home(Baseclass):
         home.click_submit()
         home.success_message()
         home.close_msg()
-
+        print("main test completed")
     def test_file2(self):
         print("This  is the second test.")
