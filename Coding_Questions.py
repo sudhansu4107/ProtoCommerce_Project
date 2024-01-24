@@ -122,3 +122,4 @@ while row<n:
         star=star-1
     row=row+1
     print()
+#------------------Thankyou  ---------------------------
